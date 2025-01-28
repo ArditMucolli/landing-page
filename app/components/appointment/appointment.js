@@ -23,6 +23,7 @@ export default function Appointment() {
           frameBorder="0"
           className="h-[777px] w-[1066px] border rounded-lg shadow-md bg-white"
           title="Google Calendar Appointment"
+          scrolling="no"
         />
       </div>
     </div>
