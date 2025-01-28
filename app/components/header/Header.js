@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import LanguageButton from "./LanguageButton";
 
 export default function Header() {
   return (
@@ -49,12 +50,7 @@ export default function Header() {
             />
           </li>
           <li>
-            <Image
-              src="/assets/secondary-button.png"
-              alt="Secondary Button"
-              width={101}
-              height={40}
-            />
+            <LanguageButton />
           </li>
           <li>
             <Image src="/assets/Frame.png" alt="Frame" width={24} height={24} />
