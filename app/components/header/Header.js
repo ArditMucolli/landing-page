@@ -42,7 +42,7 @@ export default function Header() {
           </li>
           <li>
             <Image
-              src="/assets/appointment.png"
+              src="/assets/calendar.png"
               alt="Appointment"
               width={40}
               height={40}
