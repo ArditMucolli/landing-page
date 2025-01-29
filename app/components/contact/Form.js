@@ -54,22 +54,48 @@ export default function Form() {
               />
             </div>
             <div>
-              <RadioGroup
-                label="Demo Language"
-                className="text-[14px] text-[#484848] dark:text-[#FFFFFF]"
-                color="second"
-              >
-                <Radio
-                  value="buenos-aires"
-                  className="mt-3 text-[14px]"
-                  required
+              <div className="space-y-4">
+                <label
+                  htmlFor="english"
+                  className="text-[14px] text-[#484848] dark:text-[#FFFFFF] block"
                 >
-                  <span className="ml-1">EN</span>
-                </Radio>
-                <Radio value="sydney" className="mt-3 text-[14px]" required>
-                  <span className="ml-1">DE</span>
-                </Radio>
-              </RadioGroup>
+                  Demo Language
+                </label>
+                <div className="flex flex-col gap-4">
+                  <div className="flex items-center">
+                    <input
+                      type="radio"
+                      id="english"
+                      name="language"
+                      value="buenos-aires"
+                      className="mr-2"
+                      required
+                    />
+                    <label
+                      htmlFor="english"
+                      className="text-[14px] text-[#484848] dark:text-[#FFFFFF]"
+                    >
+                      EN
+                    </label>
+                  </div>
+                  <div className="flex items-center">
+                    <input
+                      type="radio"
+                      id="german"
+                      name="language"
+                      value="sydney"
+                      className="mr-2"
+                      required
+                    />
+                    <label
+                      htmlFor="german"
+                      className="text-[14px] text-[#484848] dark:text-[#FFFFFF]"
+                    >
+                      DE
+                    </label>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div className="flex-1 space-y-4">

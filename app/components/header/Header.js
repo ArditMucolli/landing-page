@@ -163,7 +163,7 @@ export default function Header() {
 
           <div className="absolute bottom-4 w-full px-6 flex justify-between items-center">
             <LanguageButton />
-            <div className="mr-5">
+            <div className="mr-7">
               <ThemeToggle />
             </div>
           </div>
