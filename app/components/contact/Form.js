@@ -50,10 +50,14 @@ export default function Form() {
                 className="text-[14px] text-[#484848]"
                 color="danger"
               >
-                <Radio value="buenos-aires" className="mt-3 text-[14px]">
+                <Radio
+                  value="buenos-aires"
+                  className="mt-3 text-[14px]"
+                  required
+                >
                   <span className="ml-1">EN</span>
                 </Radio>
-                <Radio value="sydney" className="mt-3 text-[14px]">
+                <Radio value="sydney" className="mt-3 text-[14px]" required>
                   <span className="ml-1">DE</span>
                 </Radio>
               </RadioGroup>
