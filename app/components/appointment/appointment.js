@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Appointment() {
   return (
     <div className="h-[1091px] bg-gradient-to-b from-[#6C1EB0] via-[#ae7bdb] to-[#a866e2] p-10">
-      <div className="w-full mx-auto flex flex-row justify-between items-center mt-10 px-4">
+      <div className="w-full sm:w-[1066px] mx-auto flex  flex:row sm:flex-row justify-between items-center mt-10 px-4">
         <h1 className="text-[16px] sm:text-[28px] font-bold max-w-[180px] sm:max-w-[268px] text-left text-[#FFFFFF]">
           Vereinbaren Sie eine 15-minütige Demo
         </h1>
