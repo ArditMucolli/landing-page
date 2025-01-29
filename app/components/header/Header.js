@@ -1,6 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import LanguageButton from "./LanguageButton";
+import ThemeToggle from "../ThemeToggle";
 
 export default function Header() {
   return (
@@ -53,7 +56,8 @@ export default function Header() {
             <LanguageButton />
           </li>
           <li>
-            <Image src="/assets/Frame.svg" alt="Frame" width={24} height={24} />
+            {/* <Image src="/assets/Frame.svg" alt="Frame" width={24} height={24} /> */}
+            <ThemeToggle />
           </li>
         </ul>
       </nav>
