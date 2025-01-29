@@ -4,7 +4,9 @@ export default function Gallery() {
   return (
     <div className="p-10 max-w-[1066px] mx-auto">
       <div className="flex justify-between items-center mt-10">
-        <h1 className="text-[28px]">Galerie</h1>
+        <h1 className="text-[28px] text-[#1D1D1F] dark:text-[#FFFFFF]">
+          Galerie
+        </h1>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-10">
@@ -65,7 +67,7 @@ export default function Gallery() {
         </div>
       </div>
       <div className="flex justify-center mt-24">
-        <button className="w-[158px] h-[50px] text-[rgba(29, 29, 31, 1)] bg-transparent border-2 border-black rounded-full">
+        <button className="w-[158px] h-[50px] text-[rgba(29, 29, 31, 1)] bg-transparent border-2 border-black rounded-full dark:border-[#FFFFFF]">
           Show More...
         </button>
       </div>

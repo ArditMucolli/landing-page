@@ -7,7 +7,10 @@ export default function Form() {
         <div className="flex flex-col lg:flex-row gap-8">
           <div className="flex-1 space-y-4">
             <div>
-              <label htmlFor="name" className="text-[14px] text-[#484848]">
+              <label
+                htmlFor="name"
+                className="text-[14px] text-[#484848] dark:text-[#FFFFFF]"
+              >
                 Name
               </label>
               <input
@@ -15,12 +18,15 @@ export default function Form() {
                 placeholder="Name"
                 id="name"
                 name="name"
-                className="mt-2 px-4 py-2 w-[314px] h-[46px] border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                className="mt-2 px-4 py-2 w-[314px] h-[46px] border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:bg-[#FFFFFF]"
                 required
               />
             </div>
             <div>
-              <label htmlFor="employees" className="text-[14px] text-[#484848]">
+              <label
+                htmlFor="employees"
+                className="text-[14px] text-[#484848] dark:text-[#FFFFFF]"
+              >
                 Number of Employees
               </label>
               <input
@@ -28,27 +34,30 @@ export default function Form() {
                 placeholder="Number of Employees"
                 id="employees"
                 name="employees"
-                className="mt-2 px-4 py-2 w-[314px] h-[46px] border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                className="dark:bg-[#FFFFFF] mt-2 px-4 py-2 w-[314px] h-[46px] border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
                 required
               />
             </div>
             <div>
-              <label htmlFor="date" className="text-[14px] text-[#484848]">
+              <label
+                htmlFor="date"
+                className="text-[14px] text-[#484848] dark:text-[#FFFFFF]"
+              >
                 Date
               </label>
               <input
                 type="date"
                 id="date"
                 name="date"
-                className="mt-2 px-4 py-2 w-[314px] h-[46px] border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                className="dark:bg-[#FFFFFF] text-[#979797] mt-2 px-4 py-2 w-[314px] h-[46px] border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
                 required
               />
             </div>
             <div>
               <RadioGroup
                 label="Demo Language"
-                className="text-[14px] text-[#484848]"
-                color="danger"
+                className="text-[14px] text-[#484848] dark:text-[#FFFFFF]"
+                color="second"
               >
                 <Radio
                   value="buenos-aires"
@@ -65,7 +74,10 @@ export default function Form() {
           </div>
           <div className="flex-1 space-y-4">
             <div>
-              <label htmlFor="company" className="text-[14px] text-[#484848]">
+              <label
+                htmlFor="company"
+                className="text-[14px] text-[#484848] dark:text-[#FFFFFF]"
+              >
                 Company
               </label>
               <input
@@ -73,12 +85,15 @@ export default function Form() {
                 placeholder="Company Name"
                 id="company"
                 name="company"
-                className="mt-2 px-4 py-2 w-[314px] h-[46px] border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                className="dark:bg-[#FFFFFF] mt-2 px-4 py-2 w-[314px] h-[46px] border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
                 required
               />
             </div>
             <div>
-              <label htmlFor="email" className="text-[14px] text-[#484848]">
+              <label
+                htmlFor="email"
+                className="text-[14px] text-[#484848] dark:text-[#FFFFFF]"
+              >
                 Email
               </label>
               <input
@@ -86,14 +101,14 @@ export default function Form() {
                 placeholder="Email Address"
                 id="email"
                 name="email"
-                className="mt-2 px-4 py-2 w-[314px] h-[46px] border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                className="dark:bg-[#FFFFFF] mt-2 px-4 py-2 w-[314px] h-[46px] border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
                 required
               />
             </div>
             <div>
               <label
                 htmlFor="description"
-                className="text-[14px] text-[#484848]"
+                className="text-[14px] text-[#484848] dark:text-[#FFFFFF]"
               >
                 Description
               </label>
@@ -102,7 +117,7 @@ export default function Form() {
                 name="description"
                 placeholder="Description"
                 rows="4"
-                className="mt-2 px-4 py-2 w-[314px] h-[200px] border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                className="dark:bg-[#FFFFFF] mt-2 px-4 py-2 w-[314px] h-[200px] border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
                 required
               />
             </div>

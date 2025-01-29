@@ -5,10 +5,10 @@ export default function FooterInfos() {
     <div className="w-full min-h-[372px] flex justify-center items-center">
       <div className="w-full text-center flex flex-col lg:flex-row justify-between ">
         <div className="flex-1 text-left">
-          <h1 className="text-[16px] text-[#1D1D1F] font-medium mb-4">
+          <h1 className="text-[16px] text-[#1D1D1F] dark:text-[#6C1EB0] font-medium mb-4">
             Useful Links
           </h1>
-          <div className="text-[14px] text-[#6E6E73] flex flex-col gap-5">
+          <div className="text-[14px] text-[#6E6E73] dark:text-[#FFFFFF] flex flex-col gap-5">
             <p>About Us</p>
             <p>Modules</p>
             <p>News</p>
@@ -16,8 +16,10 @@ export default function FooterInfos() {
           </div>
         </div>
         <div className="flex-1 text-left">
-          <h1 className="text-[16px] text-[#1D1D1F] font-medium mb-4">Legal</h1>
-          <div className="text-[14px] text-[#6E6E73] flex flex-col gap-5">
+          <h1 className="text-[16px] text-[#1D1D1F] font-medium mb-4 dark:text-[#6C1EB0]">
+            Legal
+          </h1>
+          <div className="text-[14px] text-[#6E6E73] dark:text-[#FFFFFF] flex flex-col gap-5">
             <p>Imprint</p>
             <p>Privacy Policy</p>
             <p>Terms of Service</p>
@@ -43,7 +45,7 @@ export default function FooterInfos() {
           </h1>
           <label
             htmlFor="email"
-            className="text-[14px] text-[#6E6E73] font-medium"
+            className="text-[14px] text-[#6E6E73] dark:text-[#FFFFFF] font-medium"
           >
             Join our community to receive updates
           </label>
@@ -53,7 +55,7 @@ export default function FooterInfos() {
               placeholder="Email Address"
               id="email"
               name="email"
-              className="px-4 py-2 w-[240px] h-[38px] border border-gray-200 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              className="px-4 py-2 w-[240px] h-[38px] dark:bg-[#FFFFFF] border border-gray-200 focus:outline-none focus:ring-2 focus:ring-indigo-500"
               required
             />
             <button
@@ -63,7 +65,7 @@ export default function FooterInfos() {
               Subscribe
             </button>
           </div>
-          <p className="mt-3 text-[14px] text-[#6E6E73] font-medium">
+          <p className="mt-3 text-[14px] text-[#6E6E73] font-medium dark:text-[#FFFFFF]">
             By subscribing, you agree to our Privacy Policy
           </p>
         </div>

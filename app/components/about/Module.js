@@ -3,7 +3,9 @@ import Image from "next/image";
 export default function Module() {
   return (
     <div className="mt-10 mb-10">
-      <h1 className="text-[28px] text-[#1D1D1F] text-left">Hauptmodule:</h1>
+      <h1 className="text-[28px] text-[#1D1D1F] dark:text-[#FFFFFF] text-left">
+        Hauptmodule:
+      </h1>
       <ul className="flex flex-col gap-6 text-gray-700 ml-5 mt-7">
         <li className=" flex items-center gap-6">
           <Image
@@ -12,7 +14,7 @@ export default function Module() {
             width={40}
             height={40}
           />
-          <p className="text-[#1D1D1F] text-[24px]">
+          <p className="text-[#1D1D1F] dark:text-[#FFFFFF] text-[24px]">
             Vertragsmanagement: Erstellen, bearbeiten und verwalten Sie Verträge
             mit individuell anpassbaren Vorlagen.
           </p>
@@ -24,7 +26,7 @@ export default function Module() {
             width={40}
             height={40}
           />
-          <p className="text-[#1D1D1F] text-[24px]">
+          <p className="text-[#1D1D1F] dark:text-[#FFFFFF] text-[24px]">
             Automatisierte Abrechnung: Berechnen und automatisieren Sie
             Auszahlungen für Mitarbeiter basierend auf abgeschlossenen
             Verträgen.
@@ -37,7 +39,7 @@ export default function Module() {
             width={40}
             height={40}
           />
-          <p className="text-[#1D1D1F] text-[24px]">
+          <p className="text-[#1D1D1F] dark:text-[#FFFFFF] text-[24px]">
             Verkaufstracker: Organisieren und verfolgen Sie Leads, prüfen Sie
             die Nähe von Mitarbeitern zu Leads, visualisieren Sie Standorte auf
             einer Karte und importieren Sie Leads.
@@ -50,7 +52,7 @@ export default function Module() {
             width={40}
             height={40}
           />
-          <p className="text-[#1D1D1F] text-[24px]">
+          <p className="text-[#1D1D1F] dark:text-[#FFFFFF] text-[24px]">
             Akademie: Entwickeln und teilen Sie Schulungsmaterialien wie Videos,
             Dokumente und Präsentationen mit Teams oder einzelnen Mitarbeitern.
           </p>
@@ -62,7 +64,7 @@ export default function Module() {
             width={40}
             height={40}
           />
-          <p className="text-[#1D1D1F] text-[24px]">
+          <p className="text-[#1D1D1F] dark:text-[#FFFFFF] text-[24px]">
             Kommunikationstool: Echtzeit-Chat, Gruppenkanäle, Dateifreigabe und
             Unternehmensnews halten Ihr Team stets verbunden und informiert.
           </p>
@@ -74,7 +76,7 @@ export default function Module() {
             width={40}
             height={40}
           />
-          <p className="text-[#1D1D1F] text-[24px]">
+          <p className="text-[#1D1D1F] dark:text-[#FFFFFF] text-[24px]">
             Berichtswesen: Erstellen Sie detaillierte Berichte, um Leistung zu
             analysieren und datenbasierte Entscheidungen zu treffen.
           </p>
