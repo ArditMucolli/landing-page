@@ -6,7 +6,7 @@ export default function Homepageicons() {
       <ul className="flex items-center space-x-6 text-gray-700">
         <li>
           <Image
-            src="/assets/icons/facebook.png"
+            src="/assets/icons/facebook.svg"
             alt="Group"
             width={24}
             height={24}
@@ -14,7 +14,7 @@ export default function Homepageicons() {
         </li>
         <li>
           <Image
-            src="/assets/icons/instagram.png"
+            src="/assets/icons/instagram.svg"
             alt="instagram"
             width={24}
             height={24}
@@ -22,7 +22,7 @@ export default function Homepageicons() {
         </li>
         <li>
           <Image
-            src="/assets/icons/linkedin.png"
+            src="/assets/icons/linkedin.svg"
             alt="linkedin"
             width={24}
             height={24}
@@ -30,7 +30,7 @@ export default function Homepageicons() {
         </li>
         <li>
           <Image
-            src="/assets/icons/youtube.png"
+            src="/assets/icons/youtube.svg"
             alt="youtube"
             width={24}
             height={24}

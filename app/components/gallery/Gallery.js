@@ -10,7 +10,7 @@ export default function Gallery() {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-10">
         <div className="w-full h-[250px]">
           <Image
-            src="/assets/gallery/Frame1.png"
+            src="/assets/gallery/Frame1.svg"
             alt="Image 1"
             width={350}
             height={250}
@@ -19,7 +19,7 @@ export default function Gallery() {
         </div>
         <div className="w-full h-[250px]">
           <Image
-            src="/assets/gallery/Frame2.png"
+            src="/assets/gallery/Frame2.svg"
             alt="Image 2"
             width={350}
             height={250}
@@ -28,7 +28,7 @@ export default function Gallery() {
         </div>
         <div className="w-full h-[250px]">
           <Image
-            src="/assets/gallery/Frame3.png"
+            src="/assets/gallery/Frame3.svg"
             alt="Image 3"
             width={350}
             height={250}
@@ -38,7 +38,7 @@ export default function Gallery() {
 
         <div className="w-full h-[250px] mt-16">
           <Image
-            src="/assets/gallery/Frame4.png"
+            src="/assets/gallery/Frame4.svg"
             alt="Image 4"
             width={350}
             height={250}
@@ -47,7 +47,7 @@ export default function Gallery() {
         </div>
         <div className="w-full h-[250px]  mt-56">
           <Image
-            src="/assets/gallery/Frame5.png"
+            src="/assets/gallery/Frame5.svg"
             alt="Image 5"
             width={350}
             height={250}
@@ -56,7 +56,7 @@ export default function Gallery() {
         </div>
         <div className="w-full h-[250px]  mt-16 ">
           <Image
-            src="/assets/gallery/Frame6.png"
+            src="/assets/gallery/Frame6.svg"
             alt="Image 6"
             width={350}
             height={250}

@@ -7,7 +7,7 @@ export default function LanguageButton() {
       className="w-[101px] h-[40px] rounded-3xl inline-flex items-center justify-center border border-[#1D1D1F] px-4 py-2 text-sm font-medium text-gray-700 "
     >
       <Image
-        src="/assets/UK.png"
+        src="/assets/UK.svg"
         alt="UK Flag"
         width={16}
         height={16}
@@ -16,7 +16,7 @@ export default function LanguageButton() {
       <p className="text-[14px]">ENG</p>
 
       <Image
-        src="/assets/icon.png"
+        src="/assets/icon.svg"
         alt="icon"
         width={14}
         height={14}

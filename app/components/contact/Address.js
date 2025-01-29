@@ -6,7 +6,7 @@ export const Address = () => {
     <ul className="flex flex-col gap-14 text-gray-700  mt-7">
       <li className=" flex items-center gap-6">
         <Image
-          src="/assets/contact/map-pin.png"
+          src="/assets/contact/map-pin.svg"
           alt="map-pin"
           width={24}
           height={24}
@@ -17,7 +17,7 @@ export const Address = () => {
       </li>
       <li className=" flex items-center gap-6">
         <Image
-          src="/assets/contact/send.png"
+          src="/assets/contact/send.svg"
           alt="send"
           width={24}
           height={24}
@@ -27,7 +27,7 @@ export const Address = () => {
         </Link>
       </li>
       <li className=" flex items-center gap-6">
-        <Image src="/assets/contact/web.png" alt="web" width={24} height={24} />
+        <Image src="/assets/contact/web.svg" alt="web" width={24} height={24} />
         <Link href={"www.oneri.de"} className="text-[#FFFFFF] text-[16px]">
           www.oneri.de
         </Link>

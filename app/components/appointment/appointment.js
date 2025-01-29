@@ -8,7 +8,7 @@ export default function Appointment() {
           Vereinbaren Sie eine 15-minütige Demo
         </h1>
         <Image
-          src="/assets/appointment/appointment.png"
+          src="/assets/calendar-time-3.svg"
           alt="icon"
           width={125}
           height={125}

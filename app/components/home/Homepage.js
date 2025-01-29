@@ -10,7 +10,7 @@ export default function Homepage() {
   return (
     <main
       className="h-[860px] w-full bg-cover bg-center"
-      style={{ backgroundImage: "url('/assets/Homepage.png')" }}
+      style={{ backgroundImage: "url('/assets/Homepage.svg')" }}
     >
       <div>
         <HomepageLogos />

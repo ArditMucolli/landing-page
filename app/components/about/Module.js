@@ -7,7 +7,7 @@ export default function Module() {
       <ul className="flex flex-col gap-6 text-gray-700 ml-5 mt-7">
         <li className=" flex items-center gap-6">
           <Image
-            src="/assets/module/users.png"
+            src="/assets/module/users.svg"
             alt="icon"
             width={40}
             height={40}
@@ -19,7 +19,7 @@ export default function Module() {
         </li>
         <li className=" flex items-center gap-6">
           <Image
-            src="/assets/module/users2.png"
+            src="/assets/module/users2.svg"
             alt="icon"
             width={40}
             height={40}
@@ -32,7 +32,7 @@ export default function Module() {
         </li>
         <li className=" flex items-center gap-6">
           <Image
-            src="/assets/module/users3.png"
+            src="/assets/module/users3.svg"
             alt="icon"
             width={40}
             height={40}
@@ -45,7 +45,7 @@ export default function Module() {
         </li>
         <li className=" flex items-center gap-6">
           <Image
-            src="/assets/module/users4.png"
+            src="/assets/module/users4.svg"
             alt="icon"
             width={40}
             height={40}
@@ -57,7 +57,7 @@ export default function Module() {
         </li>
         <li className=" flex items-center gap-6">
           <Image
-            src="/assets/module/users5.png"
+            src="/assets/module/users5.svg"
             alt="icon"
             width={40}
             height={40}
@@ -69,7 +69,7 @@ export default function Module() {
         </li>
         <li className=" flex items-center gap-6">
           <Image
-            src="/assets/module/users6.png"
+            src="/assets/module/users6.svg"
             alt="icon"
             width={40}
             height={40}

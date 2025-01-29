@@ -6,7 +6,7 @@ export default function FooterSocials() {
     <div className="mb-7 flex flex-col lg:flex-row items-start justify-between gap-4 mt-10 text-left w-full">
       <div className="flex-1">
         <Image
-          src="/assets/oneri.png"
+          src="/assets/oneri.svg"
           alt="App Store"
           width={143}
           height={35}
