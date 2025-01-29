@@ -28,6 +28,14 @@ export default function SocialLinks() {
             height={24}
           />
         </li>
+        <li className="md:hidden">
+          <Image
+            src="/assets/icons/youtube.svg"
+            alt="youtube"
+            width={24}
+            height={24}
+          />
+        </li>
       </ul>
     </div>
   );

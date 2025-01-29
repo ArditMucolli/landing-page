@@ -1,8 +1,6 @@
-import { RadioGroup, Radio } from "@heroui/react";
-
 export default function Form() {
   return (
-    <div className="ml-4 max-w-[900px] mx-auto">
+    <div className="md:ml-4 ml-2 mt-10 md:mt-0 max-w-[900px] mx-auto">
       <form className="space-y-4">
         <div className="flex flex-col lg:flex-row gap-8">
           <div className="flex-1 space-y-4">
@@ -150,10 +148,10 @@ export default function Form() {
           </div>
         </div>
 
-        <div className="flex justify-end">
+        <div className="flex md:justify-end justify-start">
           <button
             type="submit"
-            className="w-[314px] h-[50px]  text-white bg-gradient-to-b from-[#6C1EB0] via-[#ae7bdb] to-[#a866e2] rounded-full self-end"
+            className="w-[314px] h-[50px] text-white bg-gradient-to-b from-[#6C1EB0] via-[#ae7bdb] to-[#a866e2] rounded-full self-end"
           >
             Send Message
           </button>
