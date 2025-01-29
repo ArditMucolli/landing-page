@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const Address = () => {
   return (
-    <ul className="flex flex-col gap-14 text-gray-700 ml-5 mt-7">
+    <ul className="flex flex-col gap-14 text-gray-700  mt-7">
       <li className=" flex items-center gap-6">
         <Image
           src="/assets/contact/map-pin.png"
