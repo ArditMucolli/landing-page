@@ -6,9 +6,9 @@ export default function Footer() {
   return (
     <div className="w-full flex justify-center items-start pt-8">
       <div className="w-full max-w-[1126px]">
-        <Hr />
+        <Hr className="hidden md:block" />
         <FooterInfos />
-        <Hr />
+        <Hr className="hidden md:block" />
         <FooterSocials />
       </div>
     </div>

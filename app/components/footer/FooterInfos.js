@@ -34,7 +34,7 @@ export default function FooterInfos() {
             </div>
           </div>
 
-          <div className="flex-1 flex flex-col gap-3 text-left">
+          <div className="flex-1 flex flex-col gap-3 text-left mt-10">
             <Image
               src={
                 theme === "light"
