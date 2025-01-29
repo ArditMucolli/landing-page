@@ -9,7 +9,7 @@ export default function LanguageButton() {
       className="w-[101px] h-[40px] rounded-3xl inline-flex items-center justify-center border border-[#1D1D1F] px-4 py-2 text-sm font-medium text-gray-700 dark:border-[#FFFFFF]"
     >
       <Image
-        src="/assets/UK.svg"
+        src="/assets/uk.svg"
         alt="UK Flag"
         width={16}
         height={16}
