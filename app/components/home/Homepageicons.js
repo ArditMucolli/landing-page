@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Homepageicons() {
   return (
-    <div className="flex justify-center mt-16">
+    <div className="flex justify-center md:mt-16 mt-8">
       <ul className="flex items-center space-x-6 text-gray-700">
         <li>
           <Image

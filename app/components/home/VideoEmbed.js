@@ -2,8 +2,7 @@ export default function VideoEmbed() {
   return (
     <div className="flex justify-center items-center mt-12">
       <iframe
-        width="1066"
-        height="592"
+        className="w-[330px] h-[183px] md:w-[1066px] md:h-[592px] rounded-lg"
         src="https://www.youtube.com/embed/Qd11MOqQ3mo"
         title="YouTube video"
         frameBorder="0"

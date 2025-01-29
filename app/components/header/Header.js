@@ -12,7 +12,7 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="bg-white h-[90px] dark:bg-black">
+    <header className="bg-white h-[90px] dark:bg-black pl-4 pr-3">
       <nav className="max-w-7xl mx-auto flex items-center p-4 justify-between h-full">
         <div className="flex items-center mr-8">
           <Image src="/assets/oneri.svg" alt="logo" width={106} height={26} />

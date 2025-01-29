@@ -15,12 +15,12 @@ export default function Homepage() {
       <div>
         <HomepageLogos />
         <CountdownTimer targetDate="2025-02-20T00:00:00Z" />
-        <p className="text-[#FFFFFF] text-[24px] text-center mt-10">
+        <p className="text-[#FFFFFF] md:text-[24px] text-[16px] text-center md:mt-10 mt-5">
           February 11 - 13, 2025 Essen | Germany
         </p>
         <Forms />
         <Homepageicons />
-        <div className="mt-12">
+        <div className="md:mt-12 mt-24">
           <VideoEmbed />
         </div>
       </div>
