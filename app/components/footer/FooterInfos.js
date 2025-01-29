@@ -1,6 +1,11 @@
+"use client";
+
 import Image from "next/image";
+import { useTheme } from "next-themes";
 
 export default function FooterInfos() {
+  const { theme } = useTheme();
+
   return (
     <div className="w-full min-h-[372px] flex justify-center items-center">
       <div className="w-full text-center flex flex-col lg:flex-row justify-between ">
@@ -27,13 +32,21 @@ export default function FooterInfos() {
         </div>
         <div className="flex-1 flex flex-col gap-3 mt-10 text-left">
           <Image
-            src="/assets/footer/app-store.svg"
-            alt="App Store"
+            src={
+              theme === "light"
+                ? "/assets/footer/app-store.svg"
+                : "/assets/footer/app-store-dark.svg"
+            }
+            alt="icon"
             width={100}
             height={28.05}
           />
           <Image
-            src="/assets/footer/play-store.svg"
+            src={
+              theme === "light"
+                ? "/assets/footer/play-store.svg"
+                : "/assets/footer/play-store-dark.svg"
+            }
             alt="Play Store"
             width={100}
             height={28.05}
