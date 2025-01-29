@@ -113,7 +113,8 @@ export default function Header() {
             />
           </button>
 
-          <ul className="flex flex-col space-y-6 text-[#1D1D1F] dark:text-white text-lg">
+          <ul className="flex flex-col space-y-6 text-[#1D1D1F] dark:text-white text-lg gap-2">
+            <Image src="/assets/oneri.svg" alt="logo" width={106} height={26} />
             <li className="hover:text-blue-500">
               <Link href="#">About Us</Link>
             </li>
