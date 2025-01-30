@@ -9,12 +9,10 @@ export default function FooterInfos() {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    // Set mounted to true once the component is mounted
     setMounted(true);
   }, []);
 
   if (!mounted) {
-    // Return null or a fallback while the component is not mounted
     return null;
   }
 

@@ -3,6 +3,7 @@ import { useTheme } from "next-themes";
 
 export default function LanguageButton() {
   const { theme } = useTheme();
+
   return (
     <button
       type="button"

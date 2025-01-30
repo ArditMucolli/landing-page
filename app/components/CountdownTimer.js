@@ -7,12 +7,10 @@ export default function CountdownTimer({ targetDate }) {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    // Set mounted to true after component has mounted
     setMounted(true);
   }, []);
 
   if (!mounted) {
-    // Return null or a placeholder while the component is not mounted
     return null;
   }
 
