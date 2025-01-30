@@ -1,12 +1,12 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import HomepageLogos from "./HomepageLogos";
 import CountdownTimer from "../CountdownTimer";
 import Forms from "./Forms";
 import Homepageicons from "./Homepageicons";
 import VideoEmbed from "./VideoEmbed";
-import BackgroundSVG from "@/public/assets/Homepage.svg"; // Import the SVG
 
 export default function Homepage() {
   const [mounted, setMounted] = useState(false);
@@ -22,13 +22,13 @@ export default function Homepage() {
 
   return (
     <main className="relative h-[860px] w-full">
-      {/* Wrapper for the background SVG */}
-      <div className="absolute top-0 left-0 w-full h-full z-0">
-        {/* Apply the SVG as a background */}
-        <BackgroundSVG className="w-full h-full object-cover" />
-      </div>
-
-      {/* Content on top of the background image */}
+      <Image
+        src="/assets/Homepage.png"
+        alt="Homepage Background"
+        layout="fill"
+        objectFit="cover"
+        className="z-0"
+      />
       <div className="relative z-10">
         <HomepageLogos />
         <CountdownTimer targetDate="2025-02-20T00:00:00Z" />
