@@ -15,7 +15,7 @@ export default function Homepage() {
         alt="Homepage Background"
         layout="fill"
         objectFit="cover"
-        priority
+        priority={true}
         className="z-0"
       />
 
