@@ -10,14 +10,12 @@ import { useTheme } from "next-themes";
 export default function Header() {
   const { theme } = useTheme();
   const [menuOpen, setMenuOpen] = useState(false);
-  const [mounted, setMounted] = useState(false); // Track mounting state
+  const [mounted, setMounted] = useState(false);
 
-  // Ensure that we only apply theme logic after the component has mounted
   useEffect(() => {
     setMounted(true);
   }, []);
 
-  // If mounted is false, return null to prevent hydration issues
   if (!mounted) return null;
 
   return (
