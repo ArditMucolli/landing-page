@@ -21,11 +21,7 @@ export default function Form() {
   }
 
   return (
-    <div
-      className={`md:ml-4 ml-2 mt-10 md:mt-0 max-w-[900px] mx-auto ${
-        colorScheme === "dark" ? "dark" : ""
-      }`}
-    >
+    <div className={`md:ml-4 ml-2 mt-10 md:mt-0 max-w-[900px] mx-auto `}>
       <form className="space-y-4">
         <div className="flex flex-col lg:flex-row gap-8">
           <div className="flex-1 space-y-4">
