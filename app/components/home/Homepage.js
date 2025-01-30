@@ -12,10 +12,9 @@ export default function Homepage() {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    setMounted(true); // Set to true after the component mounts
+    setMounted(true);
   }, []);
 
-  // Only render the component after it's mounted to avoid hydration issues
   if (!mounted) {
     return null;
   }
