@@ -21,9 +21,9 @@ export default function Form() {
   }
 
   return (
-    <div className={`md:ml-4 ml-2 mt-10 md:mt-0 max-w-[900px] mx-auto `}>
+    <div className={`sm:ml-4 ml-2 sm:mt-10 mt-4 md:mt-0 max-w-[900px] mx-auto`}>
       <form className="space-y-4">
-        <div className="flex flex-col lg:flex-row gap-8">
+        <div className="flex flex-col sm:flex-row lg:flex-row gap-8">
           <div className="flex-1 space-y-4">
             <div>
               <label
@@ -37,7 +37,7 @@ export default function Form() {
                 placeholder="Name"
                 id="name"
                 name="name"
-                className="mt-2 px-4 py-2 w-[314px] h-[46px] border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:bg-[#FFFFFF]"
+                className="mt-2 px-4 py-2 w-full sm:w-[314px] h-[46px] border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 dark:bg-[#FFFFFF]"
                 required
               />
             </div>
@@ -53,7 +53,7 @@ export default function Form() {
                 placeholder="Number of Employees"
                 id="employees"
                 name="employees"
-                className="dark:bg-[#FFFFFF] mt-2 px-4 py-2 w-[314px] h-[46px] border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                className="dark:bg-[#FFFFFF] mt-2 px-4 py-2 w-full sm:w-[314px] h-[46px] border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
                 required
               />
             </div>
@@ -68,7 +68,7 @@ export default function Form() {
                 type="date"
                 id="date"
                 name="date"
-                className="dark:bg-[#FFFFFF] text-[#979797] mt-2 px-4 py-2 w-[314px] h-[46px] border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                className="dark:bg-[#FFFFFF] text-[#979797] mt-2 px-4 py-2 w-full sm:w-[314px] h-[46px] border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
                 required
               />
             </div>
@@ -130,7 +130,7 @@ export default function Form() {
                 placeholder="Company Name"
                 id="company"
                 name="company"
-                className="dark:bg-[#FFFFFF] mt-2 px-4 py-2 w-[314px] h-[46px] border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                className="dark:bg-[#FFFFFF] mt-2 px-4 py-2 w-full sm:w-[314px] h-[46px] border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
                 required
               />
             </div>
@@ -146,7 +146,7 @@ export default function Form() {
                 placeholder="Email Address"
                 id="email"
                 name="email"
-                className="dark:bg-[#FFFFFF] mt-2 px-4 py-2 w-[314px] h-[46px] border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                className="dark:bg-[#FFFFFF] mt-2 px-4 py-2 w-full sm:w-[314px] h-[46px] border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
                 required
               />
             </div>
@@ -162,17 +162,17 @@ export default function Form() {
                 name="description"
                 placeholder="Description"
                 rows="4"
-                className="dark:bg-[#FFFFFF] mt-2 px-4 py-2 w-[314px] h-[200px] border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                className="dark:bg-[#FFFFFF] mt-2 px-4 py-2 w-full sm:w-[314px] h-[200px] border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
                 required
               />
             </div>
           </div>
         </div>
 
-        <div className="flex md:justify-end justify-start">
+        <div className="flex sm:justify-end justify-start">
           <button
             type="submit"
-            className="w-[314px] h-[50px] text-white bg-gradient-to-b from-[#6C1EB0] via-[#ae7bdb] to-[#a866e2] rounded-full self-end"
+            className="w-full sm:w-[314px] h-[50px] text-white bg-gradient-to-b from-[#6C1EB0] via-[#ae7bdb] to-[#a866e2] rounded-full self-end"
           >
             Send Message
           </button>
