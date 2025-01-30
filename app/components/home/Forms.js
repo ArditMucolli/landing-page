@@ -1,6 +1,18 @@
 import Image from "next/image";
+import { useState, useEffect } from "react";
 
 export default function Forms() {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    // Set mounted to true after the component has mounted
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    // Return null or a placeholder while the component is not mounted
+    return null;
+  }
   return (
     <div className="flex justify-center items-start text-xl font-semibold mt-12">
       <ul className="flex flex-col md:flex-row gap-y-6 md:gap-x-6 items-center">

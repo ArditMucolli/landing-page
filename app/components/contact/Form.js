@@ -1,6 +1,31 @@
+"use client";
+
+import { useState, useEffect } from "react";
+
 export default function Form() {
+  const [mounted, setMounted] = useState(false);
+  const [colorScheme, setColorScheme] = useState("light");
+
+  useEffect(() => {
+    setMounted(true);
+
+    const preferredScheme = window.matchMedia("(prefers-color-scheme: dark)")
+      .matches
+      ? "dark"
+      : "light";
+    setColorScheme(preferredScheme);
+  }, []);
+
+  if (!mounted) {
+    return null;
+  }
+
   return (
-    <div className="md:ml-4 ml-2 mt-10 md:mt-0 max-w-[900px] mx-auto">
+    <div
+      className={`md:ml-4 ml-2 mt-10 md:mt-0 max-w-[900px] mx-auto ${
+        colorScheme === "dark" ? "dark" : ""
+      }`}
+    >
       <form className="space-y-4">
         <div className="flex flex-col lg:flex-row gap-8">
           <div className="flex-1 space-y-4">
