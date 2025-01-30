@@ -1,36 +1,36 @@
 "use client";
 
+import Image from "next/image";
 import HomepageLogos from "./HomepageLogos";
 import CountdownTimer from "../CountdownTimer";
 import Forms from "./Forms";
 import Homepageicons from "./Homepageicons";
 import VideoEmbed from "./VideoEmbed";
-import Head from "next/head";
 
 export default function Homepage() {
   return (
-    <>
-      <Head>
-        <link rel="preload" href="/assets/Homepage.svg" as="image" />
-      </Head>
+    <main className="relative h-[860px] w-full">
+      <Image
+        src="/assets/Homepage.svg"
+        alt="Homepage Background"
+        layout="fill"
+        objectFit="cover"
+        priority
+        className="z-0"
+      />
 
-      <main
-        className="min-h-screen w-full bg-cover bg-center bg-fixed"
-        style={{ backgroundImage: "url('/assets/Homepage.svg')" }}
-      >
-        <div className="relative z-10">
-          <HomepageLogos />
-          <CountdownTimer targetDate="2025-02-20T00:00:00Z" />
-          <p className="text-[#FFFFFF] md:text-[24px] text-[16px] text-center md:mt-10 mt-5">
-            February 11 - 13, 2025 Essen | Germany
-          </p>
-          <Forms />
-          <Homepageicons />
-          <div className="md:mt-12 mt-24">
-            <VideoEmbed />
-          </div>
+      <div className="relative z-10">
+        <HomepageLogos />
+        <CountdownTimer targetDate="2025-02-20T00:00:00Z" />
+        <p className="text-[#FFFFFF] md:text-[24px] text-[16px] text-center md:mt-10 mt-5">
+          February 11 - 13, 2025 Essen | Germany
+        </p>
+        <Forms />
+        <Homepageicons />
+        <div className="md:mt-12 mt-24">
+          <VideoEmbed />
         </div>
-      </main>
-    </>
+      </div>
+    </main>
   );
 }
