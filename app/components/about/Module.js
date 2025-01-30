@@ -9,7 +9,7 @@ export default function Module() {
       <ul className="flex flex-col gap-6 text-gray-700 ml-5 mt-7">
         <li className=" flex items-center gap-6">
           <Image
-            src="/assets/module/users2.svg"
+            src="/assets/module/users1.svg"
             alt="icon"
             width={40}
             height={40}
