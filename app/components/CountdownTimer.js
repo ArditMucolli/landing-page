@@ -13,7 +13,7 @@ export default function CountdownTimer({ targetDate }) {
   if (!isClient) return null;
 
   return (
-    <div className="flex gap-8 items-center justify-center text-xl font-semibold mt-12">
+    <div className="flex gap-4 md:gap-8 items-center justify-center text-xl font-semibold mt-12">
       <Countdown
         date={new Date(targetDate)}
         renderer={({ days, hours, minutes, seconds }) => (
