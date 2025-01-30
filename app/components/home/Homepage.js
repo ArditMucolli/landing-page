@@ -11,14 +11,12 @@ export default function Homepage() {
   return (
     <main className="relative h-[860px] w-full">
       <Image
-        src="/assets/Homepage.svg"
+        src="/assets/Homepage.png"
         alt="Homepage Background"
         layout="fill"
         objectFit="cover"
-        priority={true}
         className="z-0"
       />
-
       <div className="relative z-10">
         <HomepageLogos />
         <CountdownTimer targetDate="2025-02-20T00:00:00Z" />

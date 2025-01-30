@@ -2,9 +2,21 @@
 
 import Image from "next/image";
 import { useTheme } from "next-themes";
+import { useState, useEffect } from "react";
 
 export default function FooterInfos() {
   const { theme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    // Set mounted to true once the component is mounted
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    // Return null or a fallback while the component is not mounted
+    return null;
+  }
 
   return (
     <div className="w-full min-h-[372px] flex justify-center items-center">
@@ -35,26 +47,30 @@ export default function FooterInfos() {
           </div>
 
           <div className="flex-1 flex flex-col gap-3 text-left mt-10">
-            <Image
-              src={
-                theme === "light"
-                  ? "/assets/footer/app-store.svg"
-                  : "/assets/footer/app-store-dark.svg"
-              }
-              alt="icon"
-              width={100}
-              height={28.05}
-            />
-            <Image
-              src={
-                theme === "light"
-                  ? "/assets/footer/play-store.svg"
-                  : "/assets/footer/play-store-dark.svg"
-              }
-              alt="Play Store"
-              width={100}
-              height={28.05}
-            />
+            {mounted && (
+              <>
+                <Image
+                  src={
+                    theme === "light"
+                      ? "/assets/footer/app-store.svg"
+                      : "/assets/footer/app-store-dark.svg"
+                  }
+                  alt="App Store"
+                  width={100}
+                  height={28.05}
+                />
+                <Image
+                  src={
+                    theme === "light"
+                      ? "/assets/footer/play-store.svg"
+                      : "/assets/footer/play-store-dark.svg"
+                  }
+                  alt="Play Store"
+                  width={100}
+                  height={28.05}
+                />
+              </>
+            )}
           </div>
 
           <div className="flex-1 text-left">
@@ -143,26 +159,30 @@ export default function FooterInfos() {
           </div>
 
           <div className="flex flex-col gap-3 mt-0">
-            <Image
-              src={
-                theme === "light"
-                  ? "/assets/footer/app-store.svg"
-                  : "/assets/footer/app-store-dark.svg"
-              }
-              alt="App Store"
-              width={100}
-              height={28.05}
-            />
-            <Image
-              src={
-                theme === "light"
-                  ? "/assets/footer/play-store.svg"
-                  : "/assets/footer/play-store-dark.svg"
-              }
-              alt="Play Store"
-              width={100}
-              height={28.05}
-            />
+            {mounted && (
+              <>
+                <Image
+                  src={
+                    theme === "light"
+                      ? "/assets/footer/app-store.svg"
+                      : "/assets/footer/app-store-dark.svg"
+                  }
+                  alt="App Store"
+                  width={100}
+                  height={28.05}
+                />
+                <Image
+                  src={
+                    theme === "light"
+                      ? "/assets/footer/play-store.svg"
+                      : "/assets/footer/play-store-dark.svg"
+                  }
+                  alt="Play Store"
+                  width={100}
+                  height={28.05}
+                />
+              </>
+            )}
           </div>
         </div>
 

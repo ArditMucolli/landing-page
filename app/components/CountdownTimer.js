@@ -1,8 +1,21 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import Countdown from "react-countdown";
 
 export default function CountdownTimer({ targetDate }) {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    // Set mounted to true after component has mounted
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    // Return null or a placeholder while the component is not mounted
+    return null;
+  }
+
   return (
     <div className="flex gap-4 md:gap-8 items-center justify-center text-xl font-semibold mt-12">
       <Countdown

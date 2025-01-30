@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import LanguageButton from "./LanguageButton";
@@ -10,6 +10,15 @@ import { useTheme } from "next-themes";
 export default function Header() {
   const { theme } = useTheme();
   const [menuOpen, setMenuOpen] = useState(false);
+  const [mounted, setMounted] = useState(false); // Track mounting state
+
+  // Ensure that we only apply theme logic after the component has mounted
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  // If mounted is false, return null to prevent hydration issues
+  if (!mounted) return null;
 
   return (
     <header className="bg-white h-[90px] dark:bg-black pl-4 pr-3">
